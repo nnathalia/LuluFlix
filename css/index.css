@@ -1,0 +1,21 @@
+
+.titulo{
+    display: flex;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.img{
+    display: flex;
+    font-size: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.box{
+    display: flex;
+    width: 100%;
+}
