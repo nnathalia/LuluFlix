@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,600;1,100;1,400&display=swap');
 
 :root{
-    
+    --white: #F7F7F7;
+    --black: #000000;
+    --purple: #95389E;
+    --green: #43D8C9;
 }
 
 
-*{
+body{
     font-family: 'Jost', sans-serif;
-    background-color: black;
+    background-color: var(--black)
 }
 
 
