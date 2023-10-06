@@ -1,3 +1,4 @@
+//CONFIGURAÇÃO DO MENU
 function menuShow(){
     let menuMobile = document.querySelector('.mobile-menu');
 
