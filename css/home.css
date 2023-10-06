@@ -12,7 +12,7 @@
 }
 
 body{
-    background: var(--black);
+    background: url(/img/bg-desktop.jpg) no-repeat top center/cover;
 }
 
 /*  MENU */
