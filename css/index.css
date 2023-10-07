@@ -55,6 +55,15 @@ header{
     font-weight: 400;
 }
 
+.container-bt{
+    display: inline;
+    width: 30vh;
+    height: 7vh;
+
+    gap: 5px;
+    
+}
+
 .bt-login button{
     border: none;
     background-color: var(--purple);
@@ -67,6 +76,24 @@ header{
 }
 
 .bt-login button a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.bt-assinar button{
+    border: none;
+    background-color: var(--purple);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family:'Poppins', sans-serif;
+    font-size: medium;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.bt-assinar button a{
     text-decoration: none;
     color: var(--white);
     font-weight: 500;
