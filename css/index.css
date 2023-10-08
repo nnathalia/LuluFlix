@@ -56,11 +56,11 @@ header{
 }
 
 .container-bt{
-    display: inline;
-    width: 30vh;
-    height: 7vh;
+    display: flex;
+    width: 180px;
 
-    gap: 5px;
+    gap: 10px;
+    justify-content: flex-end;
     
 }
 
@@ -80,6 +80,10 @@ header{
     color: var(--white);
     font-weight: 500;
     font-size: 1.1rem;
+}
+
+.bt-login:hover{
+    
 }
 
 .bt-assinar button{
@@ -156,3 +160,5 @@ header{
         display: block;
     }
 }
+
+
