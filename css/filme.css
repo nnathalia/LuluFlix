@@ -19,12 +19,17 @@ body{
 /*  MENU */
 header{
     background-color: transparent;
-    box-shadow: 0px 3px 10px var(--shadow);
     font-family:'Poppins', sans-serif;
     font-size: medium;
     border-radius: 10px;
-    border-color: 2px var(--purple);
+    border: 1px solid var(--purple);
 }
+
+h1{
+    color: var(--white);
+    font-family: var(--font);
+}
+
 
 .logo{
     display: flex;
@@ -134,3 +139,104 @@ header{
         display: block;
     }
 }
+
+/* CONFIGURAÇÃO DO SLIDER CARD GRANDE*/
+
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+   }
+   
+   .slider-content{
+       width: 400%;
+       height: auto;
+       display: flex;
+   }
+   
+   .slider-content input, .img-mobile{
+       display: none;
+   }
+   
+   .slide-box{
+       width: 25%;
+       height: auto;
+       position: relative;
+       text-align: center;
+       transition: 1s;
+   }
+   
+   .slide-box img{
+       width: 100%;
+       border-radius: 10px;
+   }
+   
+   .image{
+       width: 100%;
+       height: 90%;
+   }
+   
+   .nav-manual, .nav-auto{
+       position: absolute;
+       width: 99%;
+       margin-top: 44%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   .nav-manual .manual-btn, .nav-auto div{
+       border: 1px solid var(--green);
+       padding: 10px;
+       border-radius: 50%;
+       cursor: pointer;
+       transition: 0.2s;
+   }
+   
+   .nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+       margin-right: 10px;
+   }
+   
+   .nav-manual .manual-btn:hover{
+       background-color: var(--green);
+   }
+   
+   #radio1:checked ~ .nav-auto .auto-btn1,
+   #radio2:checked ~ .nav-auto .auto-btn2,
+   #radio3:checked ~ .nav-auto .auto-btn3{
+       background-color: var(--green);
+   }
+   
+   #radio1:checked ~ .primeiro{
+       margin-left: 0%;
+   }
+   
+   #radio2:checked ~ .primeiro{
+       margin-left: -25%;
+   }
+   
+   #radio3:checked ~ .primeiro{
+       margin-left: -50%;
+   }
+   
+   @media screen and (max-width: 730px){
+       
+       .img-desktop{
+           display: block;
+       }
+   
+       .nav-auto, .nav-manual{
+           margin-top: 44%;
+       }
+   
+       .nav-manual .manual-btn, .nav-auto div{
+       padding: 5px;
+       }
+   
+       h1{
+           font-size: 20px;
+       }
+   }
+   
