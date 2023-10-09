@@ -20,6 +20,7 @@ header{
     font-size: medium;
     border-radius: 10px;
     border: 1px  solid var(--purple);
+    margin-top: 2%;
 }
 
 .logo{
@@ -119,7 +120,7 @@ header{
     .nav-item{
         display: none;
     }
-    .bt-login{
+    .bt-login, .bt-assinar{
         display: none;
     }
 
