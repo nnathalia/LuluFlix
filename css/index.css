@@ -5,6 +5,8 @@
     --black: #000000;
     --purple: #95389E;
     --green: #43D8C9;
+    --font: 'Poppins', sans-serif;
+    --font2:'Jost', sans-serif;
 }
 
 body{
@@ -14,11 +16,10 @@ body{
 /*  MENU */
 header{
     background-color: transparent;
-    box-shadow: 0px 3px 10px var(--shadow);
     font-family:'Poppins', sans-serif;
     font-size: medium;
     border-radius: 10px;
-    border-color: 2px var(--purple);
+    border: 1px  solid var(--purple);
 }
 
 .logo{
@@ -29,7 +30,7 @@ header{
 .nav-bar{
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 6rem;
+    padding: 1.5rem 4rem;
 }
 
 .nav-list{
@@ -80,10 +81,6 @@ header{
     color: var(--white);
     font-weight: 500;
     font-size: 1.1rem;
-}
-
-.bt-login:hover{
-    
 }
 
 .bt-assinar button{
