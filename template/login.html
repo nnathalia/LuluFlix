@@ -1,13 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LOGO -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="../css/login.css">
     <title>Login - LuluFlix</title>
 </head>
 <body>
-    
+    <div class="header">
+        <div class="logo">
+            <a href="#">
+                <img src="/img/logo/LULU.svg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="login-body">
+        <div class="login-box">
+            <h2>Entrar</h2>
+            
+            <form>
+                <div class="input-box">
+                    <input `required type="email" placeholder="Email ou número de telefone">
+                </div>
+
+                <div class="input-box">
+                    <input required ="password" placeholder="Senha">
+                </div>
+
+                <div>
+                    <button class="submit">
+                        Entrar
+                    </button>
+                </div>
+            </form>
+             
+            <div class="support">
+                <div class="remember">
+                    <span><input type="checkbox" style="margin: 0;padding: 0;height: 13px;"></span>
+                    <span>Lembre-se de mim</span>
+                </div>
+            </div>
+
+            <div class="help">
+                <a href="#">
+                    Precisa de ajuda?
+                </a>
+            </div>
+
+            <div class="login-footer">
+                <div class="login-facebook">
+                    <span><i height="20px" class="fa-brands fa-facebook" > </i></span>
+                    <span><a href="https://www.facebook.com"> Conectar com o Facebook </a></span>
+                </div>
+
+                <div class="sign-up">
+                    <p>Novo por aqui? <a href="/template/cadastro.html"> Assine agora!</a></p>
+                </div>
+
+                <div class="terms">
+                    <p>Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#">Saiba mais</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
