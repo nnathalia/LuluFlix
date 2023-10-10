@@ -296,7 +296,7 @@ footer{
 
 
 #instagram{
-    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807)
 }
 
 #facebook{
@@ -342,7 +342,7 @@ footer{
     align-items: center;
     background-color: var(--white);
     border-radius: 4px;
-    width: 10px;
+
 }
 
 #input-group input{
@@ -386,5 +386,9 @@ footer{
     #footer-content{
         grid-template-columns: repeat(2,1fr);
         gap: 2rem;
+    }
+
+    footer{
+        font-size: 10px;
     }
 }
