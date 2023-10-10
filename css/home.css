@@ -238,3 +238,149 @@ section.slider{
         font-size: 20px;
     }
 }
+
+
+
+
+/* CONFIGURAÇÃO DO FOOOTER*/
+
+footer{
+    width: 100%;
+    color: var(--white);
+   font-family: var(--font2);
+}
+
+.footer-link
+{
+    text-decoration: none;
+}
+#footer-content{
+    background-color: var(--black);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer-contacts h1{
+    margin-bottom: 0.75rem;
+}
+
+#footer-social-media{
+    display: flex;
+    gap: 2rem;
+    margin: 1,5rem;
+}
+
+#footer-social-media .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--white);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer-social-media .footer-link i {
+    font-size: 1.25rem;
+}
+
+#footer-social-media .footer-link:hover{
+    opacity: 0.8;
+}
+
+
+#instagram{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807)
+}
+
+#facebook{
+    background-color: #4267b3;
+}
+
+#github{
+    background-color: #95389E;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+.footer-link{
+    margin-top: 10%;
+}
+
+.footer-list .footer-link{
+    color: var(--white);
+    transition: all 0.4;
+}
+
+.footer-list .footer-link:hover{
+    color: var(--green);
+}
+
+
+#footer-subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer-subscribe p{
+    color: var(--white);
+}
+
+#input-group{
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 4px;
+
+}
+
+#input-group input{
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+
+}
+
+#input-group button{
+    background-color: var(--purple);
+    border: none;
+    color: var(--white);
+    padding: 0px 1.25rem;
+    font-size: 1.125%;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#input-group:hover{
+    opacity: 0.8;
+}
+
+#footer-copyright{
+    display: flex;
+    justify-content: center;
+    background-color: var(--black);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+.fa-regular, .fa-envelope{
+    width: 20px;
+    right: 20px;
+}
+
+@media screen and (max-width: 730px){
+    #footer-content{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+}
