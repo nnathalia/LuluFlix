@@ -383,4 +383,8 @@ footer{
         grid-template-columns: repeat(2,1fr);
         gap: 2rem;
     }
+
+    footer{
+        font-size: 15px;
+    }
 }
