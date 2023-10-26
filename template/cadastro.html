@@ -8,6 +8,10 @@
     <title>Cadastro - LuluFlix</title>
 </head>
 <body>
+   
+
+
+  <div class="container">
     <div class="header">
         <div class="logo">
             <a href="#">
@@ -16,11 +20,9 @@
         </div>
     </div>
 
-
-  <div class="container">
-    <div class="titulo">
+    <div class="titulo">Cadastro</div>
         <form action="#">
-            <div class="user-detalhes">
+            <div class="user_detalhes">
                  <div class="input-box">
                     <span class="detalhes">Nome</span>
                     <input type="text" placeholder="Nome completo">
@@ -28,39 +30,59 @@
                  </div>
 
                  <div class="input-box">
-                    <span class="detalhes">Data de Nascimento</span>
+                    <span class="detalhes">Data de Nascimento:</span>
                     <input type="date">
 
                  </div>
 
-                <label for="escolhaCor">Escolha uma cor:</label>
-                    <select id="escolhaCor" name="cor">
-                        <option value="vermelho">Vermelho</option>
-                        <option value="azul">Azul</option>
-                        <option value="verde">Verde</option>
-                        <option value="amarelo">Amarelo</option>
-                    </select>
-
                  <div class="input-box">
-                    <span class="detalhes">Nome</span>
-                    <input type="text" placeholder="Nome completo">
+                    <span class="detalhes">Celular: </span>
+                    <input type="text">
 
                  </div>
 
                  <div class="input-box">
-                    <span class="detalhes">Nome</span>
-                    <input type="text" placeholder="Nome completo">
+                    <span class="detalhes">Email: </span>
+                    <input type="text" placeholder="Email">
 
                  </div>
 
                  <div class="input-box">
-                    <span class="detalhes">Nome</span>
-                    <input type="text" placeholder="Nome completo">
+                    <span class="detalhes">Senha: </span>
+                    <input type="text" placeholder="Defina sua senha">
 
+                 </div>
+
+                 <div class="input-box">
+                    <span class="detalhes">Confirme sua senha:</span>
+                    <input type="text" placeholder="Repita sua senha">
+
+                 </div>
+
+                 <div class="genero_detalhes">
+                    <span class="genero_titulo">Gênero</span>
+                    <div class="categoria">
+                        <label for="">
+                            <span class="dot_one"></span>
+                            <span class="genero">Masculino</span>
+                        </label>
+                        <label for="">
+                            <span class="dot_one"></span>
+                            <span class="genero">Feminino</span>
+                        </label>
+                        <label for="">
+                            <span class="dot_one"></span>
+                            <span class="genero">Não informar</span>
+                        </label>
+                    </div>
                  </div>
             </div>
+
+            <div class="button">
+                <input type="submit" value="Registrar">
+            </div>
         </form>
-    </div>
+   
   </div>
 </body>
 </html>

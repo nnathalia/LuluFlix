@@ -17,7 +17,7 @@ body{
     height: 100vh;
     width: 100%;
     position: relative;
-    font-family: var(--font2);
+    font-family: var(--font);
 }
 
 
@@ -27,11 +27,19 @@ body::before {
     width: 100%;
     height: 100%;
     position: absolute;
+   
+}
+
+.logo{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .logo img{
-    height: 45px;
-    width: 167px;
+    
+    width: 40%;
 
 }
 
@@ -44,14 +52,58 @@ body::before {
 .container{
     padding: 60px;
     z-index: 90;
+    max-width: 800px;
+    width: 100%;
+    background: var(--shadow);
     position: relative;
-    width: 1280px;
-    height: 600px;
+    border-radius: 10px;
     margin-left: 50%;
     background-color: rgb(0, 0, 0, 0.75 );
     border: 1px solid var(--purple);
-    border-radius: 10px;
-    box-sizing: border-box;
     transform: translateX(-50%);
 }
+
+.container .titulo {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.user_detalhes input{
+    height: 50px;
+    width: 100%;
+    color: var(--white);
+    background-color: var(--shadow);
+    border: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.user_detalhes input:hover{
+    background-color: #444;
+}
+
+.input-box{
+    margin-bottom: 25px;
+}
+
+span {
+
+}
+
+.button button{
+    height: 50px;
+    width: 100%;
+    color: var(--white);
+    background-color: var(--purple);
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 10px;
+}
+ 
+
 
