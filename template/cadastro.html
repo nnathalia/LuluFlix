@@ -8,10 +8,7 @@
     <title>Cadastro - LuluFlix</title>
 </head>
 <body>
-   
 
-
-  <div class="container">
     <div class="header">
         <div class="logo">
             <a href="#">
@@ -20,69 +17,131 @@
         </div>
     </div>
 
-    <div class="titulo">Cadastro</div>
-        <form action="#">
-            <div class="user_detalhes">
-                 <div class="input-box">
-                    <span class="detalhes">Nome: </span>
-                    <input type="text" placeholder="Nome completo">
+    <div class="login-body">
+        <div class="login-box">
+            <h2>Cadastro</h2>
+            
+            <form action="home.html" method="get">
+                <div class="input-box">
+                    <input `required type="text" placeholder="Nome Completo">
+                </div>
 
-                 </div>
-
-                 <div class="input-box">
-                    <span class="detalhes">Data de Nascimento:</span>
+                <div class="input-box">
                     <input type="date">
+                </div>
 
-                 </div>
+                <div class="genero">
+                    <input type="radio" name="genero" value="masculino" id="masculino">
+                    <label for="masculino">Masculino</label>
 
-                 <div class="input-box">
-                    <span class="detalhes">Celular: </span>
-                    <input type="text" placeholder="(xx) xxxxx-xxxx">
+                    <input type="radio" name="genero" value="feminino" id="feminino">
+                    <label for="feminino">Feminino</label>
 
-                 </div>
+                    <input type="radio" name="genero" value="outro" id="outro">
+                    <label for="outro">Outro</label>
+                </div>
 
-                 <div class="input-box">
-                    <span class="detalhes">Email: </span>
-                    <input type="text" placeholder="Email">
+                <div class="input-box">
+                    <input `required type="email" placeholder="Email ou número de telefone">
+                </div>
 
-                 </div>
+                <div class="input-box">
+                    <input type="password" required ="password" placeholder="Senha">
+                </div>
 
-                 <div class="input-box">
-                    <span class="detalhes">Senha: </span>
-                    <input type="text" placeholder="Defina sua senha">
+                <div class="input-box">
+                    <input type="password" required ="password" placeholder="Confirme a Senha">
+                </div>
 
-                 </div>
+                <div class="submit">
+                </div>
+                <a href="../template/login.html" type="submit" ><button>Registrar</button></a>
+            </form>
 
-                 <div class="input-box">
-                    <span class="detalhes">Confirme sua senha:</span>
-                    <input type="text" placeholder="Repita sua senha">
+          
+        </div>
+    </div>
 
-                 </div>
 
-                 <div class="genero_detalhes">
-                    <span class="genero_titulo">Gênero</span>
-                    <div class="categoria">
-                        <label for="">
-                            <span class="dot_one"></span>
-                            <span class="genero">Masculino</span>
-                        </label>
-                        <label for="">
-                            <span class="dot_one"></span>
-                            <span class="genero">Feminino</span>
-                        </label>
-                        <label for="">
-                            <span class="dot_one"></span>
-                            <span class="genero">Não informar</span>
-                        </label>
-                    </div>
-                 </div>
+    <!--FOOTER-->
+    <footer>
+        <div id="footer-content">
+            <div id="footer-contacts">
+                <img src="../img/logo/LULU.svg" alt="">
+                <div id="footer-social-media">
+                    <a href="https://instagram.com/ifro.jipa?igshid=MzRlODBiNWFlZA==" target="_blank" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/ifrojiparana" target="_blank" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="https://github.com/nnathalia/LuluFlix" target="_blank" class="footer-link" id="github">
+                        <i class="fa-brands fa-github"></i>                   
+                    </a>
+
+                </div>
             </div>
 
-            <div class="button">
-                <input type="submit" value="Registrar">
+            <ul class="footer-list">
+                <li>
+                    <h3>Quem Somos</h3>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/amanda-alves-ved/" target="_blank" class="footer-link">Amanda</a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/nnathallia/" target="_blank" class="footer-link">Nathalia</a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/nnathalia/LuluFlix" target="_blank" class="footer-link">Repository</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Contato</h3>
+                </li>
+
+                <li>
+                    <a href="" target="_blank" class="footer-link">e-mail</a>
+                </li>
+
+                <li>
+                    <a href="" target="_blank" class="footer-link">Telefone</a>
+                </li>
+
+                <li>
+                    <a href="" target="_blank" class="footer-link">Celular</a>
+                </li>
+            </ul>
+
+            <div id="footer-subscribe">
+                <h3>Subscribe</h3>
+
+                <p>
+                    Enter your e-mail to get notfied about 
+                    oaur news solutions
+                </p>
+
+                <div id="input-group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
             </div>
-        </form>
+        </div>
+        <div id="footer-copyright">
+            &#169
+            2023 all rigthts reserved
+        </div>
+    </footer>
    
-  </div>
+
 </body>
 </html>
