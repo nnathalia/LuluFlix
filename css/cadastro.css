@@ -10,363 +10,70 @@
     --font2:'Jost', sans-serif;
 }
 
-body{
-    background: url(/img/bg-desktop.jpg) no-repeat top center/cover;
+*{
     padding: 0;
     margin: 0;
-    height: 100vh;
-    width: 100%;
-    position: relative;
+    box-sizing: border-box;
     font-family: var(--font);
 }
 
+body{
+    background: url(/img/bg-desktop.jpg) no-repeat top center/cover;   
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-body::before {
-    content: '';
-    background-color: rgb(0, 0, 0, .5);
+.container{
     width: 100%;
-    height: 100%;
-    position: absolute;
-}
-
-.logo img{
-    height: 45px;
-    width: 167px;
-
-}
-
-.header{
-    padding: 20px 50px;
-    position: relative;
-    z-index: 10;
-}
-
-.login-body{
-    padding: 60px;
-    z-index: 90;
-    position: relative;
-    max-width: 600px;
-    height: 600px;
-    margin-left: 50%;
-    background-color: rgb(0, 0, 0, 0.75 );
-    border: 1px solid var(--purple);
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    margin: 0 28px;
     border-radius: 10px;
-    box-sizing: border-box;
-    transform: translateX(-50%);
+    box-shadow: inset -2px 2px 2px var(--white);
 }
 
-.login-body h2{
-    font-size: 32px;
+.form-titulo{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
     color: var(--white);
-    margin-top: 0;
+    text-shadow: 2px 2px 2px var(--purple);
+    border-bottom: solid 1px var(--white);
 }
 
-.login-body input{
-    height: 50px;
-    width: 100%;
-    color: var(--white);
-    background-color: var(--shadow);
-    border: none;
-    border-radius: 5px;
-    padding-left: 15px;
-    box-sizing: border-box;
-    outline: none;
-}
 
-.login-body input:hover{
-    background-color: #444;
-}
-
-.input-box{
-    margin-bottom: 25px;
-}
-
-.login-body button{
-    height: 50px;
-    width: 100%;
-    color: var(--white);
-    background-color: var(--purple);
-    border-radius: 3px;
-    font-weight: bold;
-    font-size: 16px;
-    border: none;
-    margin-bottom: 10px;
-}
-
-.login-body button:hover{
-    background-color: var(--green);
-    cursor: pointer;
-}
-
-.support{
+.user-info{
     display: flex;
-    color: var(--white);
+    flex-wrap: wrap;
     justify-content: space-between;
-    font-size: 15px;
-    margin-bottom: 5px;
+    padding: 20px 0;
 }
 
-.support input{
-    width: 15px;
-    height: 15px;
+.user-input-box:nth-child(2n){
+    justify-content: end;
 }
 
-.submit  a{
-    text-decoration: none;
-    color: var(--white);
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-
-.remember{
+.user-input-box{
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
+    width: 50px;
+    padding-bottom: 15px;
 }
 
-.remember span{
-    margin-right: 5px;
-    height: 25px;
-}
-
-.help a{
-    text-decoration: none;
+.user-input-box label{
+    width: 95%;
     color: var(--white);
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
 }
 
-.help a:hover{
-    color: var(--green);
-    text-decoration: underline;
-}
-
- /* Estilo para o rótulo do botão de rádio */
- label {
-    display: inline;
-    margin-bottom: 15px;
-    padding: 20px;
-    
-    color: var(--white);
-}
-
-/* Estilo para o input radio */
-input[type="radio"] {
-    display: none; 
-    
-}
-
-/* Estilo para a aparência do botão de rádio personalizado */
-input[type="radio"] + label::before {
-    content: '';
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    border: 2px solid var(--green); /* Cor da borda */
-    border-radius: 50%; /* Tornar o círculo */
-    margin-right: 5px;
-    vertical-align: middle;
-}
-
-/* IMPUT DO RADIO GENERO*/
-input[type="radio"]:checked + label::before {
-    background-color: var(--purple) /* Cor de preenchimento quando selecionado */
-}
-
-/* Estilo para o rótulo do botão de rádio quando marcado */
-input[type="radio"]:checked + label {
-    font-weight: bold; /* Exemplo de estilo de texto quando selecionado */
-}
-
-.sign-up{
-    color: var(--green);
-    font-size: 16px
-}
-
-
-.sign-up a{
-    color: var(--green);
-    font-size: 16px;
-    text-decoration: none;
-}
-
-.sign-up a:hover{
-    text-decoration: underline;
-}
-
-.terms{
-    color: var(--purple);
-    font-size: 14px;
-}
-
-.terms a{
-    text-decoration: none;
-    color: var(--white);
-}
-
-.terms a:hover{
-    text-decoration: underline;
-    color: var(--green);
-}
-
-@media screen and (max-width: 730px){
-    .login-body{
-        width: 100%;
-    }
-
-    .logo{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-}
-
-
-/* CONFIGURAÇÃO DO FOOOTER*/
-
-footer{
-    margin-top: 3%;
-    width: 100%;
-    color: var(--white);
-   font-family: var(--font2);
-}
-
-.footer-link
-{
-    text-decoration: none;
-}
-#footer-content{
-    background-color: var(--black);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 3rem 3.5rem;
-}
-
-#footer-contacts h1{
-    margin-bottom: 0.75rem;
-}
-
-#footer-social-media{
-    display: flex;
-    gap: 2rem;
-    margin: 1,5rem;
-}
-
-#footer-social-media .footer-link{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2.5rem;
-    width: 2.5rem;
-    color: var(--white);
-    border-radius: 50%;
-    transition: all 0.4s;
-}
-
-#footer-social-media .footer-link i {
-    font-size: 1.25rem;
-}
-
-#footer-social-media .footer-link:hover{
-    opacity: 0.8;
-}
-
-
-#instagram{
-    background: linear-gradient(#7f37c9, #ff2992, #ff9807)
-}
-
-#facebook{
-    background-color: #4267b3;
-}
-
-#github{
-    background-color: #95389E;
-}
-
-.footer-list{
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    list-style: none;
-}
-.footer-link{
-    margin-top: 10%;
-}
-
-.footer-list .footer-link{
-    color: var(--white);
-    transition: all 0.4;
-}
-
-.footer-list .footer-link:hover{
-    color: var(--green);
-}
-
-
-#footer-subscribe{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-#footer-subscribe p{
-    color: var(--white);
-}
-
-#input-group{
-    display: flex;
-    align-items: center;
-    background-color: var(--white);
-    border-radius: 4px;
-
-}
-
-#input-group input{
-    all: unset;
-    padding: 0.75rem;
-    width: 100%;
-
-}
-
-#input-group button{
-    background-color: var(--purple);
-    border: none;
-    color: var(--white);
-    padding: 0px 1.25rem;
-    font-size: 1.125%;
-    height: 100%;
-    border-radius: 0px 4px 4px 0px;
-    cursor: pointer;
-    transition: all 0.4s;
-}
-
-#input-group:hover{
-    opacity: 0.8;
-}
-
-#footer-copyright{
-    display: flex;
-    justify-content: center;
-    background-color: var(--black);
-    font-size: 0.9rem;
-    padding: 1.5rem;
-    font-weight: 100;
-}
-
-.fa-regular, .fa-envelope{
-    width: 20px;
-    right: 20px;
-}
-
-
-@media screen and (max-width: 730px){
-    #footer-content{
-        grid-template-columns: repeat(2,1fr);
-        gap: 2rem;
-    }
-
-    footer{
-        font-size: 15px;
-    }
+.user-input-box input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
 }
