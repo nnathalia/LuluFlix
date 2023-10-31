@@ -37,3 +37,81 @@
 //
 
 //CONFIGURAÇÃO DO SLIDER CARD PEQUENO
+const wrapper = document.querySelector('#wrapper, #wrapper2, #wrapper3, #wrapper4, #wrapper5, #wrapper6');
+const carrossel = document.querySelector('#carrossel, #carrossel2');
+const btEsquerda = document.querySelector('#bt-esquerda, #bt-esquerda2');
+const btDireita = document.querySelector('#bt-direita, #bt-direita2');
+const container = document.querySelector('#img, #img2');
+
+btEsquerda.addEventListener('click', () => {
+  container.scrollLeft -= 100;
+});
+
+btDireita.addEventListener('click', () => {
+  container.scrollLeft += 100;
+});
+
+const btEsquerda2 = document.querySelector('#bt-esquerda2');
+const btDireita2 = document.querySelector('#bt-direita2');
+const container2 = document.querySelector('#img2');
+
+    
+btEsquerda2.addEventListener('click', () => {
+    container2.scrollLeft -= 100;
+});
+  
+btDireita2.addEventListener('click', () => {
+    container2.scrollLeft += 100;
+});
+
+const btEsquerda3 = document.querySelector('#bt-esquerda3');
+const btDireita3 = document.querySelector('#bt-direita3');
+const container3 = document.querySelector('#img3');
+
+    
+btEsquerda3.addEventListener('click', () => {
+    container3.scrollLeft -= 100;
+});
+  
+  btDireita3.addEventListener('click', () => {
+    container3.scrollLeft += 100;
+});
+
+const btEsquerda4 = document.querySelector('#bt-esquerda4');
+const btDireita4 = document.querySelector('#bt-direita4');
+const container4 = document.querySelector('#img4');
+
+    
+btEsquerda4.addEventListener('click', () => {
+    container4.scrollLeft -= 100;
+});
+  
+  btDireita4.addEventListener('click', () => {
+    container4.scrollLeft += 100;
+});
+
+const btEsquerda5 = document.querySelector('#bt-esquerda5');
+const btDireita5 = document.querySelector('#bt-direita5');
+const container5 = document.querySelector('#img5');
+
+    
+btEsquerda5.addEventListener('click', () => {
+    container5.scrollLeft -= 100;
+});
+  
+  btDireita5.addEventListener('click', () => {
+    container5.scrollLeft += 100;
+});
+
+const btEsquerda6 = document.querySelector('#bt-esquerda6');
+const btDireita6 = document.querySelector('#bt-direita6');
+const container6 = document.querySelector('#img6');
+
+    
+btEsquerda6.addEventListener('click', () => {
+    container6.scrollLeft -= 100;
+});
+  
+  btDireita6.addEventListener('click', () => {
+    container6.scrollLeft += 100;
+});
