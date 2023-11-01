@@ -38,9 +38,9 @@
 
 //CONFIGURAÇÃO DO SLIDER CARD PEQUENO
 const wrapper = document.querySelector('#wrapper, #wrapper2, #wrapper3, #wrapper4, #wrapper5, #wrapper6');
-const carrossel = document.querySelector('#carrossel, #carrossel2');
-const btEsquerda = document.querySelector('#bt-esquerda, #bt-esquerda2');
-const btDireita = document.querySelector('#bt-direita, #bt-direita2');
+const carrossel = document.querySelector('#carrossel, #carrossel2, #carrossel3, #carrossel4, #carrossel5, #carrossel6');
+const btEsquerda = document.querySelector('#bt-esquerda');
+const btDireita = document.querySelector('#bt-direita');
 const container = document.querySelector('#img, #img2');
 
 btEsquerda.addEventListener('click', () => {
