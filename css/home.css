@@ -266,6 +266,7 @@ section.slider{
 .img{
     object-fit: cover;
     width: 250px;
+    right: 200px;
     margin-right: 10px;
     border-radius: 10px;
     border: solid 1px var(--purple);
@@ -286,12 +287,12 @@ section.slider{
     height: 46px;
     cursor: pointer;
     position: absolute;
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 3.0rem;
+    text-align:center;
     line-height: 46px;
-    background: var(--white);
     border-radius: 50%;
     transform: translateY(-50%);
+    color: var(--green);
 }
 
 .wrapper i:first-child{
@@ -301,12 +302,6 @@ section.slider{
 .wrapper i:last-child{
     right: 10px;
 }
-
-
-
-
-
-
 
 /* CONFIGURAÇÃO DO FOOOTER*/
 
