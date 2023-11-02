@@ -165,6 +165,7 @@ section.slider{
     position: relative;
     text-align: center;
     transition: 1s;
+    cursor: pointer;
 }
 
 .slide-box img{
@@ -250,10 +251,10 @@ section.slider{
 }
 
 .carrossel{
-    box-shadow: 2px 2px 4px var(--black);
     overflow: hidden;
     width: 100%;
     margin-top: 10px;
+    scroll-behavior: smooth;
 }
 
 .container, .container2, .container3, .container4, .container5, .container6{
@@ -265,12 +266,15 @@ section.slider{
 
 .img{
     object-fit: cover;
-    width: 250px;
-    right: 200px;
+    max-width: 300px;
+    width: 190px;
+    right: 140px;
     margin-right: 10px;
     border-radius: 10px;
     border: solid 1px var(--purple);
 }
+
+
 
 .img:hover{
     border: solid 1px var(--green);
@@ -436,9 +440,8 @@ footer{
     font-weight: 100;
 }
 
-.fa-regular, .fa-envelope{
-    width: 20px;
-    right: 20px;
+.bt-email i{
+    font-size: 20px;
 }
 
 @media screen and (max-width: 730px){
