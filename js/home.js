@@ -122,5 +122,7 @@
     
     btDireita6.addEventListener('click', () => {
         container6.scrollLeft += 100;
-    });
+    }); 
 //
+
+
