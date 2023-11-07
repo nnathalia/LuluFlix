@@ -337,9 +337,8 @@ footer{
     font-weight: 100;
 }
 
-.fa-regular, .fa-envelope{
-    width: 20px;
-    right: 20px;
+.bt-email i{
+    font-size: 20px;
 }
 
 
