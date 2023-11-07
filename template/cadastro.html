@@ -3,65 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="../css/cadastro.css">
     <title>Cadastro - LuluFlix</title>
 </head>
 <body>
 
-    <div class="container">
-        <h1 class="form-titulo">Registrar</h1>
-        <form action="#">
-            <div class="user-info">
-                <div class="user-input-box">
-                    <label for="fullname">Nome Completo</label>
-                    <input type="text" id="fullname" name="fullname" placeholder="Nome Completo">
-                </div>
-
-                <div class="user-input-box">
-                    <label for="usuario">Usuario</label>
-                    <input type="text" id="usuario" name="usuario" placeholder="Usuário">
-                </div>
-
-                <div class="user-input-box">
-                    <label for="telefone">Telefone</label>
-                    <input type="text" id="telefone" name="telefone" placeholder="Número de Telefone">
-                </div>
-
-                <div class="user-input-box">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Email">
-                </div>
-
-                <div class="user-input-box">
-                    <label for="senha">Senha</label>
-                    <input type="password" id="senha" name="senha" placeholder="Senha">
-                </div>
-
-                <div class="user-input-box">
-                    <label for="confirmesenha">Confirme sua Senha</label>
-                    <input type="password" id="confirmesenha" name="confirmesenha" placeholder="Confirme sua Senha">
-                </div>
-
-            </div>
-
-            <div class="genero-input-box">
-                <span class="genero-titulo">Gênero</span>
-                <input type="radio" id="senha" name="genero" id="masculino">
-                <label for="masculino">Masculino</label>
-
-                <input type="radio" id="senha" name="genero" id="feminino">
-                <label for="feminino">Feminino</label>
-
-                <input type="radio" id="senha" name="genero" id="Outro">
-                <label for="outro">Outro</label>
-            </div>
-
-            <div class="bt-registrar">
-                <input type="submit" value="Registrar">
-            </div>
-        </form>
+    <div class="header">
+        <div class="logo">
+            <a href="#">
+                <img src="/img/logo/LULU.svg" alt="">
+            </a>
+        </div>
     </div>
+
+    <div class="container">
+            <div class="registro-box">
+                <h1 class="form-titulo">Cadastrar</h1>
+                <form action="#">
+                    <div class="user-info">
+                        <div class="user-input-box">
+                            <label for="fullname">Nome Completo</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Nome Completo">
+                        </div>
+
+                        <div class="user-input-box">
+                            <label for="usuario">Usuario</label>
+                            <input type="text" id="usuario" name="usuario" placeholder="Usuário">
+                        </div>
+
+                        <div class="user-input-box">
+                            <label for="telefone">Telefone</label>
+                            <input type="text" id="telefone" name="telefone" placeholder="Número de Telefone">
+                        </div>
+
+                        <div class="user-input-box">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" placeholder="Email">
+                        </div>
+
+                        <div class="user-input-box">
+                            <label for="senha">Senha</label>
+                            <input type="password" id="senha" name="senha" placeholder="Senha">
+                        </div>
+
+                        <div class="user-input-box">
+                            <label for="confirmesenha">Confirme sua Senha</label>
+                            <input type="password" id="confirmesenha" name="confirmesenha" placeholder="Confirme sua Senha">
+                        </div>
+
+                    </div>
+
+                    <div class="genero-input-box">
+                        <span class="genero-titulo">Gênero</span>
+                            <div class="categoria">
+                                <input type="radio" id="senha" name="genero" id="masculino">
+                                <label for="masculino">Masculino</label>
+
+                                <input type="radio" id="senha" name="genero" id="feminino">
+                                <label for="feminino">Feminino</label>
+
+                                <input type="radio" id="senha" name="genero" id="Outro">
+                                <label for="outro">Outro</label>
+                            </div>
+                    </div>
+
+                    <div class="bt-registrar">
+                        <input type="submit" value="Cadastrar">
+                    </div>
+
+                    <div class="entrar">
+                        <p>Já possui conta? <a href="/template/login.html"> Logar!</a></p>
+                    </div>
+                 </div>
+
+          
+            </form>
+    </div>
+
+     <!--FOOTER-->
+     <footer>
+        <div id="footer-content">
+            <div id="footer-contacts">
+                <img src="../img/logo/LULU.svg" alt="">
+                <div id="footer-social-media">
+                    <a href="https://instagram.com/ifro.jipa?igshid=MzRlODBiNWFlZA==" target="_blank" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/ifrojiparana" target="_blank" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="https://github.com/nnathalia/LuluFlix" target="_blank" class="footer-link" id="github">
+                        <i class="fa-brands fa-github"></i>                   
+                    </a>
+
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Quem Somos</h3>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/amanda-alves-ved/" target="_blank" class="footer-link">Amanda</a>
+                </li>
+
+                <li>
+                    <a href="https://www.linkedin.com/in/nnathallia/" target="_blank" class="footer-link">Nathalia</a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/nnathalia/LuluFlix" target="_blank" class="footer-link">Repository</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Contato</h3>
+                </li>
+
+                <li>
+                    <a href="" target="_blank" class="footer-link">e-mail</a>
+                </li>
+
+                <li>
+                    <a href="" target="_blank" class="footer-link">Telefone</a>
+                </li>
+
+                <li>
+                    <a href="" target="_blank" class="footer-link">Celular</a>
+                </li>
+            </ul>
+
+            <div id="footer-subscribe">
+                <h3>Subscribe</h3>
+
+                <p>
+                    Enter your e-mail to get notfied about 
+                    oaur news solutions
+                </p>
+
+                <div id="input-group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="footer-copyright">
+            &#169
+            2023 all rigthts reserved
+        </div>
+    </footer>
 
 </body>
 </html>
