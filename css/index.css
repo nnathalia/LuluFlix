@@ -14,14 +14,59 @@ body{
 }
 
 /*  MENU */
-header{
-    background-color: transparent;
-    font-family:'Poppins', sans-serif;
-    font-size: medium;
-    border-radius: 10px;
-    border: 1px  solid var(--purple);
-    margin-top: 2%;
+
+.container-md{
+    height: 100vh;
 }
+
+.main{
+    height: 70vh;
+    width: 100%;
+    margin-bottom: 5px;
+    background-image: url(/img/fundo-index.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.collapse{
+    justify-content: end;
+}
+
+.navbar-nav li{
+    color: #95389E;
+}
+
+.nav-item1{
+    border: 2px solid var(--white);
+    margin: 6px;
+    padding: 2px;
+    border-radius: 8px;
+    padding: 0px 4px;
+}
+
+.nav-item a{
+    color: var(--white);
+    font-size: medium;
+    font-weight: 600;
+}
+
+.nav-item2{
+    background-color: var(--purple);
+    border-radius: 8px;
+    color: var(--purple);
+    margin: 6px;
+    padding: 2px;
+    padding: 0px;
+}
+
+
+
+
+
+
 
 .logo{
     display: flex;
