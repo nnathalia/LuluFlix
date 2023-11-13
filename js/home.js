@@ -110,19 +110,6 @@
         container5.scrollLeft += 100;
     });
 
-    const btEsquerda6 = document.querySelector('#bt-esquerda6');
-    const btDireita6 = document.querySelector('#bt-direita6');
-    const container6 = document.querySelector('#img6');
-
-    container6.style.scrollBehavior = 'smooth';
-
-    btEsquerda6.addEventListener('click', () => {
-        container6.scrollLeft -= 100;
-    });
-    
-    btDireita6.addEventListener('click', () => {
-        container6.scrollLeft += 100;
-    }); 
 //
 
 
