@@ -11,141 +11,163 @@
 
 body{
     background: url(/img/bg-desktop.jpg) no-repeat top center/cover;
+    font-family: var(--font);
 }
 
-/*  MENU */
-
-.container-md{
-    height: 100vh;
+.header{
+    padding: 20px 50px;
+    position: relative;
+    z-index: 10;
 }
 
-.main{
-    height: 70vh;
-    width: 100%;
-    margin-bottom: 5px;
-    background-image: url(/img/fundo-index.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.collapse{
-    justify-content: end;
-}
-
-.navbar-nav li{
-    color: #95389E;
-}
-
-.nav-item1{
-    border: 2px solid var(--white);
-    margin: 6px;
-    padding: 2px;
-    border-radius: 8px;
-    padding: 0px 4px;
-}
-
-.nav-item a{
-    color: var(--white);
-    font-size: medium;
-    font-weight: 600;
-}
-
-.nav-item2{
-    background-color: var(--purple);
-    border-radius: 8px;
-    color: var(--purple);
-    margin: 6px;
-    padding: 2px;
-    padding: 0px;
-}
-
-
-
-
-
-
-
-.logo{
-    display: flex;
-    align-items: center;
-}
-
-.nav-bar{
+.container .header{
+    position: absolute;
+    top: 15px;
+    left: 0;
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 4rem;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px;
+    z-index: 1000000;
+
 }
 
-.nav-list{
+.container .header img{
+    width: 135%;
+    height: 45px;
+    width: 167px;
+}
+
+.container .header a{
+    color: var(--white);
+    text-decoration: none;
+    background-color: var(--purple);
+    padding: 8px 18px;
+    border-radius: 5px;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.nav-list ul{
-    display:flex;
+.banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to bottom, #000, transparent);
+}
+
+
+.banner::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to top, #000, transparent);
+}
+
+.banner .fit{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.banner .box{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 1000;
+}
+
+.banner .box .heading{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    list-style: none;
+    align-items: center;
+    text-align: center;
 }
 
-.nav-item{
-    margin: 0 15px;
-
+.banner .box .heading h2{
+    font-size: 3.125rem;
+    color: var(--white);
+    letter-spacing: 2px;
+    width: 80%;
 }
 
-.nav-link{
-    text-decoration: none;
-    font-size: 1.15rem;
+.banner .box .heading h5{
+    font-size: 1.625rem;
     color: var(--white);
     font-weight: 400;
+    padding: 1rem 0;
 }
 
-.container-bt{
+.banner .box .heading p{
+    font-size: 1.2rem;
+    color: var(--white);
+   font-weight: 500;
+   padding: 15px 0;
+   padding-bottom: 20px;
+}
+
+.banner .box .pesquisar{
     display: flex;
-    width: 180px;
-
-    gap: 10px;
-    justify-content: flex-end;
-    
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.bt-login button{
-    border: none;
-    background-color: var(--purple);
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-family:'Poppins', sans-serif;
-    font-size: medium;
-    color: var(--white);
-    cursor: pointer;
+.banner .box .pesquisar input{
+    font-size: 16px;
+    border: 2px solid var(--green);
+    border-style: none;
+    color: var(--black);
+    border-radius: 4px;
+    bottom: 10px 10px 0 0;
+    min-width: 400px;
+    height: 40px;
+    align-items: center;
 }
 
-.bt-login button a{
+.banner .box .pesquisar a{
     text-decoration: none;
+    text-transform: uppercase;
     color: var(--white);
-    font-weight: 500;
-    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    border-radius: 2px;
+    background: var(--purple);
+    box-shadow: 0 1px rgba(0, 0, 0, 0.45);
+    font-size: 0.950rem;
+    line-height: 40px;
+    min-width: 220px;
+    padding: 0 20px;
 }
 
-.bt-assinar button{
-    border: none;
-    background-color: var(--purple);
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-family:'Poppins', sans-serif;
-    font-size: medium;
-    color: var(--white);
-    cursor: pointer;
+.banner .box .pesquisar a:hover{
+    color: var(--green);
 }
 
-.bt-assinar button a{
-    text-decoration: none;
-    color: var(--white);
-    font-weight: 500;
-    font-size: 1.1rem;
-}
+
+
+
+/* FOOTER*/
 
 
 .mobile-menu-icon{
