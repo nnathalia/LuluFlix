@@ -29,7 +29,7 @@
         cont++
 
         if(cont > 3){
-           cont = 1
+        cont = 1
         }
 
         document.getElementById('radio' + cont).checked = true
@@ -63,7 +63,7 @@
     btEsquerda2.addEventListener('click', () => {
         container2.scrollLeft -= 100;
     });
-    
+
     btDireita2.addEventListener('click', () => {
         container2.scrollLeft += 100;
     });
@@ -73,11 +73,11 @@
     const container3 = document.querySelector('#img3');
 
     container3.style.scrollBehavior = 'smooth';
-    
+
     btEsquerda3.addEventListener('click', () => {
         container3.scrollLeft -= 100;
     });
-    
+
     btDireita3.addEventListener('click', () => {
         container3.scrollLeft += 100;
     });
@@ -87,11 +87,11 @@
     const container4 = document.querySelector('#img4');
 
     container4.style.scrollBehavior = 'smooth';
-    
+
     btEsquerda4.addEventListener('click', () => {
         container4.scrollLeft -= 100;
     });
-    
+
     btDireita4.addEventListener('click', () => {
         container4.scrollLeft += 100;
     });
@@ -105,11 +105,22 @@
     btEsquerda5.addEventListener('click', () => {
         container5.scrollLeft -= 100;
     });
-    
+
     btDireita5.addEventListener('click', () => {
         container5.scrollLeft += 100;
     });
 
+    const btEsquerda6 = document.querySelector('#bt-esquerda6');
+    const btDireita6 = document.querySelector('#bt-direita6');
+    const container6 = document.querySelector('#img6');
+
+    container6.style.scrollBehavior = 'smooth';
+
+    btEsquerda6.addEventListener('click', () => {
+        container6.scrollLeft -= 100;
+    });
+
+    btDireita6.addEventListener('click', () => {
+        container6.scrollLeft += 100;
+    });
 //
-
-
