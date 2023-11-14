@@ -123,4 +123,18 @@
     btDireita6.addEventListener('click', () => {
         container6.scrollLeft += 100;
     });
+
+    const btEsquerda7 = document.querySelector('#bt-esquerda7');
+    const btDireita7 = document.querySelector('#bt-direita7');
+    const container7 = document.querySelector('#img7');
+
+    container7.style.scrollBehavior = 'smooth';
+
+    btEsquerda7.addEventListener('click', () => {
+        container7.scrollLeft -= 100;
+    });
+
+    btDireita7.addEventListener('click', () => {
+        container7.scrollLeft += 100;
+    });
 //
