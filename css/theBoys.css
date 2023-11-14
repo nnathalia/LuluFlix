@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,600;1,100;1,400&family=Poppins:wght@300;500;600&display=swap');
+
+:root{
+    --white: #F7F7F7;
+    --black: #000000;
+    --purple: #95389E;
+    --green: #43D8C9;
+    --shadow: #464646;
+    --font: 'Poppins', sans-serif;
+    --font2:'Jost', sans-serif;
+}
+
+body{
+    background: url(/img/series/theBoys.jpg) no-repeat top center/cover;
+}
+
+
+/*  MENU */
+header{
+    background-color: transparent;
+    font-family:'Poppins', sans-serif;
+    font-size: medium;
+    border-radius: 10px;
+    border: 1px solid  var(--purple);
+}
+
+h1{
+    color: var(--white);
+    font-family: var(--font);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 4rem;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display:flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item{
+    margin: 0 15px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: var(--white);
+    font-weight: 400;
+}
+
+.bt-login button{
+    border: none;
+    background-color: var(--purple);
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-family:'Poppins', sans-serif;
+    font-size: medium;
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+.bt-login button a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+
+/* CONFIGURAÇÕES DO MENU MOBILE */
+@media screen and (max-width: 730px){
+    .nav-bar{
+        page-break-inside: 1.5rem 4rem;
+    }
+    
+    .nav-item{
+        display: none;
+    }
+    .bt-login{
+        display: none;
+    }
+    .pesquisa-box{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .bt-login{
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .bt-login button{
+        width: 100%;
+    }
+
+    .open{
+        display: block;
+    }
+}
+
+/* CONFIGURAÇÃO DO SLIDER CARD GRANDE*/
+
+   section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: hidden;
+   }
+   
+   .slider-content{
+       width: 400%;
+       height: auto;
+       display: flex;
+   }
+
+   .slider-content input{
+    display: none;
+    }
+   
+   .slide-box{
+       width: 25%;
+       height: auto;
+       position: relative;
+       text-align: center;
+       transition: 1s;
+   }
+   
+   .slide-box img{
+       width: 100%;
+       border-radius: 10px;
+   }
+   
+   .image{
+       width: 100%;
+       height: 90%;
+       cursor: pointer;
+   }
+   
+   .nav-manual, .nav-auto{
+       position: absolute;
+       width: 99%;
+       margin-top: 44%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   
+   .nav-manual .manual-btn, .nav-auto div{
+       border: 1px solid var(--green);
+       padding: 10px;
+       border-radius: 50%;
+       cursor: pointer;
+       transition: 0.2s;
+   }
+   
+   .nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+       margin-right: 10px;
+   }
+   
+   .nav-manual .manual-btn:hover{
+       background-color: var(--green);
+   }
+   
+   #radio1:checked ~ .nav-auto .auto-btn1,
+   #radio2:checked ~ .nav-auto .auto-btn2,
+   #radio3:checked ~ .nav-auto .auto-btn3{
+       background-color: var(--green);
+   }
+   
+   #radio1:checked ~ .primeiro{
+       margin-left: 0%;
+   }
+   
+   #radio2:checked ~ .primeiro{
+       margin-left: -25%;
+   }
+   
+   #radio3:checked ~ .primeiro{
+       margin-left: -50%;
+   }
+   
+   @media screen and (max-width: 730px){
+       
+       .img-desktop{
+           display: block;
+       }
+   
+       .nav-auto, .nav-manual{
+           margin-top: 44%;
+       }
+   
+       .nav-manual .manual-btn, .nav-auto div{
+       padding: 5px;
+       }
+   
+       h1{
+           font-size: 20px;
+       }
+   }
+
+/*MAiN*/
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50em;
+    margin-top: 1.5em;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2.5em;
+}
+
+main section .logo-img{
+    width: 30em;
+    margin: 3em 0;
+}
+   
+main section .btn-box{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.btn-box .btn{
+    padding: 20px 45px;
+    background: var(--purple);
+    color: var(--white);
+    margin-bottom: 2em;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    transition: all .3s;
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 15px;
+}
+
+.btn-box .btn:hover{
+    border: 1px solid var(--green);
+    color: var(--green);
+}
+
+.btn-box .btn:focus{
+    background: var(--green);
+}
+
+main section .text{
+    color: var(--white);
+    line-height: 20px;
+    font-family: var(--font);
+    font-size: 15px;
+}
+
+.btn-box2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 50px;
+    border-radius: 10px;
+    margin-top: 1em;
+    font-size: 20px;
+    color: #fff;
+    font-family: var(--font);
+    border: 1px solid transparent;
+    background: var(--purple);
+    transition: all .3s;
+    cursor: pointer;
+}
+.btn-box2:hover{
+    border: 1px solid var(--green);
+
+}
+.btn-box2 .play{
+    width: 1.4em;
+    filter: invert(1);
+}
+
+
