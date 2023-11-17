@@ -5,6 +5,7 @@
     --black: #000000;
     --purple: #95389E;
     --green: #43D8C9;
+    --shadow: #464646;
     --font: 'Poppins', sans-serif;
     --font2:'Jost', sans-serif;
 }
@@ -164,11 +165,14 @@ body{
     color: var(--green);
 }
 
+/* CONTAINER 01 */
 .part1{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding: 2rem 4rem;
+    border-bottom: 0.6rem solid var(--shadow);
 
 }
 
@@ -194,6 +198,43 @@ body{
 }
 
 .part1 .img img{
+    width: 85%;
+}
+
+/*CONTAINER 02*/
+
+.part2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 4rem;
+    border-bottom: 0.6rem solid var(--shadow);
+
+}
+
+.part2 .escrita{
+    width: 48%;
+}
+
+.part2 .escrita h1{
+    font-size: 3.3rem;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    color: var(--white);
+}
+
+.part2 .escrita p{
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+
+.part2 .img{
+    width: 45%;
+}
+
+.part2 .img img{
     width: 85%;
 }
 
