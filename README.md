@@ -1,6 +1,6 @@
 # LuluFlix
 
-* Projeto proposto pela metéria de Programação Web I: Construir um site de filmes e séries usando css, html e javascript
+* Projeto proposto pela metéria de Programação Web I: Desenvolver um site de filmes e séries usando css, html e javascript
 
 ![Alt text](Luluflix-Logo.png)
 
