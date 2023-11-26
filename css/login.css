@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,600;1,100;1,400&family=Poppins:wght@300;500;600&display=swap');
 
-:root{
+:root {
     --white: #F7F7F7;
     --black: #000000;
     --purple: #95389E;
     --green: #43D8C9;
     --shadow: #464646;
     --font: 'Poppins', sans-serif;
-    --font2:'Jost', sans-serif;
+    --font2: 'Jost', sans-serif;
 }
 
-body{
+body {
     background: url(/img/bg-desktop.jpg) no-repeat top center/cover;
     padding: 0;
     margin: 0;
@@ -28,39 +28,39 @@ body::before {
     position: absolute;
 }
 
-.logo img{
+.logo img {
     height: 45px;
     width: 167px;
 
 }
 
-.header{
+.header {
     padding: 20px 50px;
     position: relative;
     z-index: 10;
 }
 
-.login-body{
+.login-body {
     padding: 60px;
     z-index: 90;
     position: relative;
     max-width: 600px;
     height: 600px;
     margin-left: 50%;
-    background-color: rgb(0, 0, 0, 0.75 );
+    background-color: rgb(0, 0, 0, 0.75);
     border: 1px solid var(--purple);
     border-radius: 10px;
     box-sizing: border-box;
     transform: translateX(-50%);
 }
 
-.login-body h2{
+.login-body h2 {
     font-size: 32px;
     color: var(--white);
     margin-top: 0;
 }
 
-.login-body input{
+.login-body input {
     height: 50px;
     width: 100%;
     color: var(--white);
@@ -72,15 +72,15 @@ body::before {
     outline: none;
 }
 
-.login-body input:hover{
+.login-body input:hover {
     background-color: #444;
 }
 
-.input-box{
+.input-box {
     margin-bottom: 25px;
 }
 
-.login-body button{
+.login-body button {
     height: 50px;
     width: 100%;
     color: var(--white);
@@ -92,12 +92,12 @@ body::before {
     margin-bottom: 10px;
 }
 
-.login-body button:hover{
+.login-body button:hover {
     background-color: var(--green);
     cursor: pointer;
 }
 
-.support{
+.support {
     display: flex;
     color: var(--white);
     justify-content: space-between;
@@ -105,12 +105,12 @@ body::before {
     margin-bottom: 5px;
 }
 
-.support input{
+.support input {
     width: 15px;
     height: 15px;
 }
 
-.submit  a{
+.submit a {
     text-decoration: none;
     color: var(--white);
     display: block;
@@ -119,80 +119,80 @@ body::before {
 }
 
 
-.remember{
+.remember {
     display: flex;
     align-items: center;
 }
 
-.remember span{
+.remember span {
     margin-right: 5px;
     height: 25px;
 }
 
-.help a{
+.help a {
     text-decoration: none;
     color: var(--white);
 }
 
-.help a:hover{
+.help a:hover {
     color: var(--green);
     text-decoration: underline;
 }
 
-.login-facebook{
+.login-facebook {
     display: flex;
     align-items: center;
     width: 100%;
     color: #4267B3;
 }
 
-.login-facebook span{
+.login-facebook span {
     margin-right: 5px;
     font-size: 16px;
 }
 
-.login-facebook span a{
-        text-decoration: none;
-        color: #4267B3;
+.login-facebook span a {
+    text-decoration: none;
+    color: #4267B3;
 }
 
-.sign-up{
+.sign-up {
     color: var(--green);
     font-size: 16px
 }
 
 
-.sign-up a{
+.sign-up a {
     color: var(--green);
     font-size: 16px;
     text-decoration: none;
 }
 
-.sign-up a:hover{
+.sign-up a:hover {
     text-decoration: underline;
 }
 
-.terms{
+.terms {
     color: var(--purple);
     font-size: 14px;
 }
 
-.terms a{
+.terms a {
     text-decoration: none;
     color: var(--white);
 }
 
-.terms a:hover{
+.terms a:hover {
     text-decoration: underline;
     color: var(--green);
 }
 
-@media screen and (max-width: 730px){
-    .login-body{
+@media screen and (max-width: 730px) {
+    .login-body {
         width: 100%;
     }
 
-    .logo{
+    .logo {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -203,35 +203,35 @@ body::before {
 
 /* CONFIGURAÇÃO DO FOOOTER*/
 
-footer{
+footer {
     margin-top: 3%;
     width: 100%;
     color: var(--white);
-   font-family: var(--font2);
+    font-family: var(--font2);
 }
 
-.footer-link
-{
+.footer-link {
     text-decoration: none;
 }
-#footer-content{
+
+#footer-content {
     background-color: var(--black);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
 }
 
-#footer-contacts h1{
+#footer-contacts h1 {
     margin-bottom: 0.75rem;
 }
 
-#footer-social-media{
+#footer-social-media {
     display: flex;
     gap: 2rem;
-    margin: 1,5rem;
+    margin: 1, 5rem;
 }
 
-#footer-social-media .footer-link{
+#footer-social-media .footer-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -246,54 +246,55 @@ footer{
     font-size: 1.25rem;
 }
 
-#footer-social-media .footer-link:hover{
+#footer-social-media .footer-link:hover {
     opacity: 0.8;
 }
 
 
-#instagram{
+#instagram {
     background: linear-gradient(#7f37c9, #ff2992, #ff9807)
 }
 
-#facebook{
+#facebook {
     background-color: #4267b3;
 }
 
-#github{
+#github {
     background-color: #95389E;
 }
 
-.footer-list{
+.footer-list {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
     list-style: none;
 }
-.footer-link{
+
+.footer-link {
     margin-top: 10%;
 }
 
-.footer-list .footer-link{
+.footer-list .footer-link {
     color: var(--white);
     transition: all 0.4;
 }
 
-.footer-list .footer-link:hover{
+.footer-list .footer-link:hover {
     color: var(--green);
 }
 
 
-#footer-subscribe{
+#footer-subscribe {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-#footer-subscribe p{
+#footer-subscribe p {
     color: var(--white);
 }
 
-#input-group{
+#input-group {
     display: flex;
     align-items: center;
     background-color: var(--white);
@@ -301,14 +302,14 @@ footer{
 
 }
 
-#input-group input{
+#input-group input {
     all: unset;
     padding: 0.75rem;
     width: 100%;
 
 }
 
-#input-group button{
+#input-group button {
     background-color: var(--purple);
     border: none;
     color: var(--white);
@@ -320,11 +321,11 @@ footer{
     transition: all 0.4s;
 }
 
-#input-group:hover{
+#input-group:hover {
     opacity: 0.8;
 }
 
-#footer-copyright{
+#footer-copyright {
     display: flex;
     justify-content: center;
     background-color: var(--black);
@@ -333,18 +334,18 @@ footer{
     font-weight: 100;
 }
 
-.bt-email i{
+.bt-email i {
     font-size: 20px;
 }
 
 
-@media screen and (max-width: 730px){
-    #footer-content{
-        grid-template-columns: repeat(2,1fr);
+@media screen and (max-width: 730px) {
+    #footer-content {
+        grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
 
-    footer{
+    footer {
         font-size: 15px;
     }
 }

@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,600;1,100;1,400&family=Young+Serif&display=swap');
 
-:root{
+:root {
     --white: #F7F7F7;
     --black: #000000;
     --purple: #95389E;
     --green: #43D8C9;
     --shadow: #464646;
     --font: 'Poppins', sans-serif;
-    --font2:'Jost', sans-serif;
+    --font2: 'Jost', sans-serif;
 }
 
-body{
-   background: var(--black);
+body {
+    background: var(--black);
     font-family: var(--font);
 }
 
-.header{
+.header {
     padding: 20px 50px;
     position: relative;
     z-index: 10;
 }
 
-.container .header{
+.container .header {
     position: absolute;
     top: 15px;
     left: 0;
@@ -34,13 +34,13 @@ body{
 
 }
 
-.container .header img{
+.container .header img {
     width: 135%;
     height: 45px;
     width: 167px;
 }
 
-.container .header a{
+.container .header a {
     color: var(--white);
     text-decoration: none;
     background-color: var(--purple);
@@ -48,7 +48,7 @@ body{
     border-radius: 5px;
 }
 
-.banner{
+.banner {
     width: 100%;
     height: 100vh;
     position: relative;
@@ -57,7 +57,7 @@ body{
     align-items: center;
 }
 
-.banner::before{
+.banner::before {
     content: '';
     position: absolute;
     top: 0;
@@ -69,7 +69,7 @@ body{
 }
 
 
-.banner::after{
+.banner::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -80,7 +80,7 @@ body{
     background: linear-gradient(to top, #000, transparent);
 }
 
-.banner .fit{
+.banner .fit {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -89,7 +89,7 @@ body{
     object-fit: cover;
 }
 
-.banner .box{
+.banner .box {
     position: absolute;
     top: 10%;
     left: 50%;
@@ -97,7 +97,7 @@ body{
     z-index: 1000;
 }
 
-.banner .box .heading{
+.banner .box .heading {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,36 +105,36 @@ body{
     text-align: center;
 }
 
-.banner .box .heading h2{
+.banner .box .heading h2 {
     font-size: 3.125rem;
     color: var(--white);
     letter-spacing: 2px;
     width: 80%;
 }
 
-.banner .box .heading h5{
+.banner .box .heading h5 {
     font-size: 1.625rem;
     color: var(--white);
     font-weight: 400;
     padding: 1rem 0;
 }
 
-.banner .box .heading p{
+.banner .box .heading p {
     font-size: 1.2rem;
     color: var(--white);
-   font-weight: 500;
-   padding: 15px 0;
-   padding-bottom: 20px;
+    font-weight: 500;
+    padding: 15px 0;
+    padding-bottom: 20px;
 }
 
-.banner .box .pesquisar{
+.banner .box .pesquisar {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.banner .box .pesquisar input{
+.banner .box .pesquisar input {
     font-size: 16px;
     border: 2px solid var(--green);
     border-style: none;
@@ -146,14 +146,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
-input{
+input {
     font-family: var(--font);
 }
 
-.banner .box .pesquisar a{
+.banner .box .pesquisar a {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--white);
@@ -169,12 +169,12 @@ input{
     padding: 0 20px;
 }
 
-.banner .box .pesquisar a:hover{
+.banner .box .pesquisar a:hover {
     color: var(--green);
 }
 
 /* CONTAINER 01 */
-.part1{
+.part1 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -184,34 +184,34 @@ input{
 
 }
 
-.part1 .escrita{
+.part1 .escrita {
     width: 40%;
 }
 
-.part1 .escrita h1{
+.part1 .escrita h1 {
     font-size: 3.3rem;
     letter-spacing: 2px;
     padding-bottom: 10px;
     color: var(--white);
 }
 
-.part1 .escrita p{
+.part1 .escrita p {
     font-size: 1.2rem;
     color: var(--white);
 }
 
 
-.part1 .img{
+.part1 .img {
     width: 45%;
 }
 
-.part1 .img img{
+.part1 .img img {
     width: 85%;
 }
 
 /*CONTAINER 02*/
 
-.part2{
+.part2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -221,28 +221,28 @@ input{
 
 }
 
-.part2 .escrita{
+.part2 .escrita {
     width: 48%;
 }
 
-.part2 .escrita h1{
+.part2 .escrita h1 {
     font-size: 3.3rem;
     letter-spacing: 2px;
     padding-bottom: 10px;
     color: var(--white);
 }
 
-.part2 .escrita p{
+.part2 .escrita p {
     font-size: 1.2rem;
     color: var(--white);
 }
 
 
-.part2 .img{
+.part2 .img {
     width: 45%;
 }
 
-.part2 .img img{
+.part2 .img img {
     width: 85%;
 }
 
@@ -250,58 +250,61 @@ input{
 /* FOOTER*/
 
 
-.mobile-menu-icon{
+.mobile-menu-icon {
     display: none;
 }
 
-.mobile-menu{
+.mobile-menu {
     display: none;
 }
 
 /* CONFIGURAÇÕES DO MENU MOBILE */
-@media screen and (max-width: 730px){
-    .nav-bar{
+@media screen and (max-width: 730px) {
+    .nav-bar {
         page-break-inside: 1.5rem 4rem;
     }
-    
-    .nav-item{
-        display: none;
-    }
-    .bt-login, .bt-assinar{
+
+    .nav-item {
         display: none;
     }
 
-    .mobile-menu-icon{
+    .bt-login,
+    .bt-assinar {
+        display: none;
+    }
+
+    .mobile-menu-icon {
         display: block;
     }
-    .mobile-menu-icon button{
+
+    .mobile-menu-icon button {
         background-color: transparent;
         border: none;
         cursor: pointer;
     }
 
-    .mobile-menu ul{
+    .mobile-menu ul {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
     }
 
-    .mobile-menu .nav-item{
+    .mobile-menu .nav-item {
         display: block;
         padding-top: 1.2rem;
     }
 
-    .mobile-menu .bt-login{
+    .mobile-menu .bt-login {
         display: block;
         padding: 1rem 2rem;
     }
 
-    .mobile-menu .bt-login button{
+    .mobile-menu .bt-login button {
         width: 100%;
     }
 
-    .open{
+    .open {
         display: block;
     }
 }
@@ -309,34 +312,34 @@ input{
 
 /* CONFIGURAÇÃO DO FOOOTER*/
 
-footer{
+footer {
     width: 100%;
     color: var(--white);
-   font-family: var(--font2);
+    font-family: var(--font2);
 }
 
-.footer-link
-{
+.footer-link {
     text-decoration: none;
 }
-#footer-content{
+
+#footer-content {
     background-color: var(--black);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
 }
 
-#footer-contacts h1{
+#footer-contacts h1 {
     margin-bottom: 0.75rem;
 }
 
-#footer-social-media{
+#footer-social-media {
     display: flex;
     gap: 2rem;
-    margin: 1,5rem;
+    margin: 1, 5rem;
 }
 
-#footer-social-media .footer-link{
+#footer-social-media .footer-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -351,54 +354,55 @@ footer{
     font-size: 1.25rem;
 }
 
-#footer-social-media .footer-link:hover{
+#footer-social-media .footer-link:hover {
     opacity: 0.8;
 }
 
 
-#instagram{
+#instagram {
     background: linear-gradient(#7f37c9, #ff2992, #ff9807)
 }
 
-#facebook{
+#facebook {
     background-color: #4267b3;
 }
 
-#github{
+#github {
     background-color: #95389E;
 }
 
-.footer-list{
+.footer-list {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
     list-style: none;
 }
-.footer-link{
+
+.footer-link {
     margin-top: 10%;
 }
 
-.footer-list .footer-link{
+.footer-list .footer-link {
     color: var(--white);
     transition: all 0.4;
 }
 
-.footer-list .footer-link:hover{
+.footer-list .footer-link:hover {
     color: var(--green);
 }
 
 
-#footer-subscribe{
+#footer-subscribe {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-#footer-subscribe p{
+#footer-subscribe p {
     color: var(--white);
 }
 
-#input-group{
+#input-group {
     display: flex;
     align-items: center;
     background-color: var(--white);
@@ -406,14 +410,14 @@ footer{
 
 }
 
-#input-group input{
+#input-group input {
     all: unset;
     padding: 0.75rem;
     width: 100%;
 
 }
 
-#input-group button{
+#input-group button {
     background-color: var(--purple);
     border: none;
     color: var(--white);
@@ -425,11 +429,11 @@ footer{
     transition: all 0.4s;
 }
 
-#input-group:hover{
+#input-group:hover {
     opacity: 0.8;
 }
 
-#footer-copyright{
+#footer-copyright {
     display: flex;
     justify-content: center;
     background-color: var(--black);
@@ -438,18 +442,17 @@ footer{
     font-weight: 100;
 }
 
-.bt-email i{
+.bt-email i {
     font-size: 20px;
 }
 
-@media screen and (max-width: 730px){
-    #footer-content{
-        grid-template-columns: repeat(2,1fr);
+@media screen and (max-width: 730px) {
+    #footer-content {
+        grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
 
-    footer{
+    footer {
         font-size: 15px;
     }
 }
-

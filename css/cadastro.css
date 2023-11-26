@@ -1,23 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,600;1,100;1,400&family=Poppins:wght@300;500;600&display=swap');
 
-:root{
+:root {
     --white: #F7F7F7;
     --black: #000000;
     --purple: #95389E;
     --green: #43D8C9;
     --shadow: #464646;
     --font: 'Poppins', sans-serif;
-    --font2:'Jost', sans-serif;
+    --font2: 'Jost', sans-serif;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+
 }
 
-body{
+body {
     background: url(/img/bg-desktop.jpg) no-repeat top center/cover;
     padding: 0;
     margin: 0;
@@ -37,13 +37,13 @@ body::before {
 }
 
 
-.logo img{
+.logo img {
     height: 45px;
     width: 167px;
 
 }
 
-.header{
+.header {
     padding: 20px 50px;
     position: relative;
     z-index: 10;
@@ -51,19 +51,19 @@ body::before {
 }
 
 
-.container{
+.container {
     padding: 40px;
     z-index: 90;
     position: relative;
     max-width: 700px;
     height: 600px;
     margin-left: 50%;
-    background-color: rgb(0, 0, 0, 0.75 );
+    background-color: rgb(0, 0, 0, 0.75);
     border: 1px solid var(--purple);
     border-radius: 10px;
     box-sizing: border-box;
     transform: translateX(-50%);
-    
+    font-family: var(--font);
 }
 
 .form-titulo {
@@ -72,25 +72,25 @@ body::before {
     margin-top: 0;
 }
 
-.user-info{
+.user-info {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px 0;
 }
 
-.user-input-box:nth-child(2n){
+.user-input-box:nth-child(2n) {
     justify-content: end;
 }
 
-.user-input-box{
+.user-input-box {
     display: flex;
     flex-wrap: wrap;
     width: 50%;
     padding-bottom: 15px;
 }
 
-.user-input-box label{
+.user-input-box label {
     width: 95%;
     color: var(--white);
     font-size: 20px;
@@ -98,7 +98,7 @@ body::before {
     margin: 5px 0;
 }
 
-.user-input-box input{
+.user-input-box input {
     height: 40px;
     width: 95%;
     border-radius: 7px;
@@ -111,50 +111,50 @@ body::before {
 }
 
 
-.genero-titulo{
+.genero-titulo {
     color: var(--white);
     font-size: 24px;
     font-weight: 600;
     border-bottom: 1px solid var(--white);
 }
 
-.categoria{
+.categoria {
     margin: 15px 0;
     color: var(--white);
 }
 
-.categoria label{
+.categoria label {
     padding: 0 20px 0 5px;
 }
 
 .categoria label,
 .categoria input,
-.bt-registrar input{
+.bt-registrar input {
     cursor: pointer;
 }
 
-.bt-registrar button{
-    display: block;
+.bt-registrar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     margin-top: 10px;
     font-size: 20px;
+    font-family: var(--font);
     padding: 10px;
     border: none;
     border-radius: 4px;
     color: var(--white);
     background: var(--purple);
+    text-decoration: none;
 }
 
-.bt-registrar button:hover{
+.bt-registrar a:hover {
     background-color: var(--green);
     cursor: pointer;
 }
 
-.bt-registrar a{
-    text-decoration: none;
-}
-
-.entrar{
+.entrar {
     color: var(--green);
     font-size: 16px;
     align-items: center;
@@ -165,42 +165,42 @@ body::before {
 
 }
 
-.entrar a{
+.entrar a {
     color: var(--green);
     font-size: 16px;
     text-decoration: none;
 }
 
-.entrar a:hover{
+.entrar a:hover {
     text-decoration: underline;
 }
 
-@media(max-width: 600px){
-    .container{
+@media(max-width: 600px) {
+    .container {
         min-width: 280px;
     }
 
-    .user-input-box{
+    .user-input-box {
         margin-bottom: 12px;
         width: 100%;
     }
 
-    .user-input-box:nth-child(2n){
+    .user-input-box:nth-child(2n) {
         justify-content: space-between;
     }
 
-    .categoria{
+    .categoria {
         display: flex;
         justify-content: space-between;
         width: 100%;
     }
 
-    .user-info{
+    .user-info {
         max-height: 380px;
         overflow: auto;
     }
 
-    .user-info::-webkit-scrollbar{
+    .user-info::-webkit-scrollbar {
         width: 0;
     }
 }
@@ -210,35 +210,35 @@ body::before {
 
 /* CONFIGURAÇÃO DO FOOOTER*/
 
-footer{
+footer {
     margin-top: 3%;
     width: 100%;
     color: var(--white);
-   font-family: var(--font2);
+    font-family: var(--font2);
 }
 
-.footer-link
-{
+.footer-link {
     text-decoration: none;
 }
-#footer-content{
+
+#footer-content {
     background-color: var(--black);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
 }
 
-#footer-contacts h1{
+#footer-contacts h1 {
     margin-bottom: 0.75rem;
 }
 
-#footer-social-media{
+#footer-social-media {
     display: flex;
     gap: 2rem;
-    margin: 1,5rem;
+    margin: 1, 5rem;
 }
 
-#footer-social-media .footer-link{
+#footer-social-media .footer-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -253,54 +253,55 @@ footer{
     font-size: 1.25rem;
 }
 
-#footer-social-media .footer-link:hover{
+#footer-social-media .footer-link:hover {
     opacity: 0.8;
 }
 
 
-#instagram{
+#instagram {
     background: linear-gradient(#7f37c9, #ff2992, #ff9807)
 }
 
-#facebook{
+#facebook {
     background-color: #4267b3;
 }
 
-#github{
+#github {
     background-color: #95389E;
 }
 
-.footer-list{
+.footer-list {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
     list-style: none;
 }
-.footer-link{
+
+.footer-link {
     margin-top: 10%;
 }
 
-.footer-list .footer-link{
+.footer-list .footer-link {
     color: var(--white);
     transition: all 0.4;
 }
 
-.footer-list .footer-link:hover{
+.footer-list .footer-link:hover {
     color: var(--green);
 }
 
 
-#footer-subscribe{
+#footer-subscribe {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
-#footer-subscribe p{
+#footer-subscribe p {
     color: var(--white);
 }
 
-#input-group{
+#input-group {
     display: flex;
     align-items: center;
     background-color: var(--white);
@@ -308,14 +309,14 @@ footer{
 
 }
 
-#input-group input{
+#input-group input {
     all: unset;
     padding: 0.75rem;
     width: 100%;
 
 }
 
-#input-group button{
+#input-group button {
     background-color: var(--purple);
     border: none;
     color: var(--white);
@@ -327,11 +328,11 @@ footer{
     transition: all 0.4s;
 }
 
-#input-group:hover{
+#input-group:hover {
     opacity: 0.8;
 }
 
-#footer-copyright{
+#footer-copyright {
     display: flex;
     justify-content: center;
     background-color: var(--black);
@@ -340,18 +341,18 @@ footer{
     font-weight: 100;
 }
 
-.bt-email i{
+.bt-email i {
     font-size: 20px;
 }
 
 
-@media screen and (max-width: 730px){
-    #footer-content{
-        grid-template-columns: repeat(2,1fr);
+@media screen and (max-width: 730px) {
+    #footer-content {
+        grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
 
-    footer{
+    footer {
         font-size: 15px;
     }
 }

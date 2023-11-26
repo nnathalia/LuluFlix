@@ -76,3 +76,10 @@ window.onload = () => {
   cardNameInput.value = "";
   cardNumber.value = "";
 };
+
+
+const link = document.getElementById("bt-assinar");
+
+link.addEventListener("click", function () {
+  alert("Assinatura concluida! Bem vindo ao LULUFLIX!");
+});
