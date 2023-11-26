@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/cadastroCartao.css">
+    <link rel="icon" href="../img/logo/Luluflix-Logo.png">
+    <script defer src="../js/cadastroCartao.js"></script>
+    <title>Cadastro - LuluFlix</title>
+</head>
+
+<body>
+     
+    <header>
+        <div class="header">
+            <div class="logo">
+                <a href="./cadastro.html">
+                    <img src="/img/logo/LULU.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="credit-card" id="card">
+            <div class="card-front">
+                <div class="branding">
+                <img src="../img/icones/chip.png" class="chip-img" />
+                <img src="../img/logo/Luluflix-Logo.png" class="visa-logo" />
+                </div>
+                <div class="card-number">
+                <div>
+                    <span class="card-number-display">_</span>
+                    <span class="card-number-display">_</span>
+                    <span class="card-number-display">_</span>
+                    <span class="card-number-display">_</span>
+                </div>
+                <div>
+                    <span class="card-number-display">_</span>
+                    <span class="card-number-display">_</span>
+                    <span class="card-number-display">_</span>
+                    <span class="card-number-display">_</span>
+                </div>
+                <div>
+                    <span class="card-number-display">_</span>
+                    <span class="card-number-display">_</span>
+                    <span class="card-number-display">_</span>
+                    <span class="card-number-display">_</span>
+                </div>
+                <div>
+                    <span class="card-number-display">_</span>
+                    <span class="card-number-display">_</span>
+                    <span class="card-number-display">_</span>
+                    <span class="card-number-display">_</span>
+                </div>
+                </div>
+                <div class="details">
+                <div>
+                    <span>Titular do cartão</span>
+                    <span id="card-holder-name">Seu nome aqui</span>
+                </div>
+                <div>
+                    <span>Validade</span>
+                    <span id="validity">00/00</span>
+                </div>
+                </div>
+            </div>
+            <div class="card-back">
+                <div class="black-strip"></div>
+                <div class="white-strip">
+                <span>CVV</span>
+                <div id="cvv-display"></div>
+                </div>
+                <img src="../img/logo/Luluflix-Logo.png" class="visa-logo" />
+            </div>
+            </div>
+            <form>
+            <label for="card-number">Número do Cartão:</label>
+            <input type="number" id="card-number" placeholder="1234123412341234" />
+
+            <label for="card-holder">Titular do cartão:</label>
+            <input type="text" id="card-name-input" placeholder="Seu nome" />
+
+            <div class="date-cvv">
+                <div>
+                <label for="validity">Validade:</label>
+                <input type="date" id="validity-input" />
+                </div>
+                <div>
+                <label for="cvv">CVV:</label>
+                <input type="number" id="cvv" placeholder="***" />
+                </div>
+
+                <div>
+                    <label for="card-holder">Plano:</label>
+                    <select name="cor">
+                        <option value="vermelho">1 TELA R$9,99</option>
+                        <option value="verde">2 TELAS R$19,99</option>
+                        <option value="azul">3 TELAS R$29,99</option>
+                        <option value="amarelo">4 TELAS R$39,99</option>
+                    </select>
+                </div>
+                </div>
+                
+                <div class="bt-registrar">
+                    <a href="home.html"><input type="submit" value="Assinar"></a>
+                </div>
+            
+           
+        </div>
+    </main>
+
+        <!--FOOTER-->
+        <footer>
+            <div id="footer-content">
+                <div id="footer-contacts">
+                    <img src="../img/logo/LULU.svg" alt="">
+                    <div id="footer-social-media">
+                        <a href="https://instagram.com/ifro.jipa?igshid=MzRlODBiNWFlZA==" target="_blank" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/ifrojiparana" target="_blank" class="footer-link" id="facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+
+                        <a href="https://github.com/nnathalia/LuluFlix" target="_blank" class="footer-link" id="github">
+                            <i class="fa-brands fa-github"></i>                   
+                        </a>
+
+                    </div>
+                </div>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3>Quem Somos</h3>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/amanda-alves-ved/" target="_blank" class="footer-link">Amanda</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/nnathallia/" target="_blank" class="footer-link">Nathalia</a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/nnathalia/LuluFlix" target="_blank" class="footer-link">Repository</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3>Contato</h3>
+                    </li>
+
+                    <li>
+                        <a href="" target="_blank" class="footer-link">e-mail</a>
+                    </li>
+
+                    <li>
+                        <a href="" target="_blank" class="footer-link">Telefone</a>
+                    </li>
+
+                    <li>
+                        <a href="" target="_blank" class="footer-link">Celular</a>
+                    </li>
+                </ul>
+
+                <div id="footer-subscribe">
+                    <h3>Inscreva-se</h3>
+
+                    <p>
+                        Digite seu e-mail para ser notificado sobre
+                        nossas novidades e notícias
+                    </p>
+
+                    <div id="input-group">
+                        <input type="email" id="email">
+                        <button class="bt-email">
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-copyright">
+                &#169
+                2023 all rigthts reserved
+            </div>
+        </footer>
+
+</body>
